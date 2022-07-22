@@ -55,6 +55,6 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: demoflask-service
-        cluster: test-demo
+        cluster: test-demo1
         wait-for-service-stability: true
   
