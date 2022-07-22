@@ -48,7 +48,7 @@ jobs:
       with:
         task-definition: taskdef.json
         container-name: demoflask-app
-        image: ${{ steps.build-image.outputs.image }}
+        image: 840227146443.dkr.ecr.us-west-2.amazonaws.com/testing:latest
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
