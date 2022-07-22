@@ -5,7 +5,7 @@
       "name": "testing",
       "image": "840227146443.dkr.ecr.us-west-2.amazonaws.com/testing:latest",
       "cpu": 1,
-      "memory": 1,
+      "memory": 100,
       "portMappings": [
           {
               "containerPort": 5002,
