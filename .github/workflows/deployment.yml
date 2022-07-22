@@ -57,4 +57,4 @@ jobs:
         service: demoflask-service
         cluster: test-demo
         wait-for-service-stability: true
-        
+      
