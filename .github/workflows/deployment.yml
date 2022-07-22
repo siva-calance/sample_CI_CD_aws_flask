@@ -46,7 +46,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: taskdef.json
+        task-definition: task-definition.json
         container-name: demoflask-app
         image: 840227146443.dkr.ecr.us-west-2.amazonaws.com/testing:latest
 
