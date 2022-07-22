@@ -26,8 +26,8 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: demoflask-repo
-        IMAGE_TAG: ${{ github.sha }}
+        ECR_REPOSITORY: ${{ secret.REPO_NAME }}
+        IMAGE_TAG: "latest"
       working-directory: .
       run: |
         # Build a docker container and
