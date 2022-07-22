@@ -55,6 +55,6 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: demoflask-service
-        cluster: fargate
+        cluster: test-demo
         wait-for-service-stability: true
         
