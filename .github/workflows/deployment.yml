@@ -47,7 +47,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: demoflask-app
+        container-name: testing
         image: 840227146443.dkr.ecr.us-west-2.amazonaws.com/testing:latest
 
     - name: Deploy Amazon ECS task definition
