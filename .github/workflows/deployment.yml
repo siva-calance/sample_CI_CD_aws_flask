@@ -50,4 +50,4 @@ jobs:
         service: demoflask-service
         cluster: fargate
         wait-for-service-stability: true
-        '
+        
