@@ -1,0 +1,24 @@
+{
+  "family": "store-demo-containers",
+  "containerDefinitions": [
+    {
+      "name": "testing",
+      "image": "840227146443.dkr.ecr.us-west-2.amazonaws.com/testing:latest",
+      "cpu": 1,
+      "memory": 1,
+      "portMappings": [
+          {
+              "containerPort": 5002,
+              "hostPort": 5002
+          }
+      ],
+      "essential": true,
+      "environment": [
+          {
+              "name": "NODE_ENV",
+              "value": "production"
+          }
+      ]
+    }
+  ]
+}
